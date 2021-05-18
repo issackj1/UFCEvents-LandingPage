@@ -56,20 +56,42 @@ const App = () => {
           <CustomCards />
         </Grid>
         <Grid item id={"services"}>
-          <Typography
-            variant={"h4"}
-            style={{ paddingTop: "2em", fontWeight: "bolder" }}
-          >
-            Event Analysis
-          </Typography>
-        </Grid>
-        <Grid item>
-          <Typography variant={"subtitle1"}>
-            We allow fight fans to easily see dates and times of upcoming fights
-            (in their local timezone) eliminating the need to search for events
-            on the internet.
-          </Typography>
-          <SvgCharts />
+          <Grid container direction={"row"} justify={"space-between"}>
+            <Grid item sm={12} md={6}>
+              <Typography
+                variant={"h4"}
+                style={{ paddingTop: "2em", fontWeight: "bolder" }}
+              >
+                Live Updates
+              </Typography>
+              <Typography variant={"subtitle1"}>
+                We allow fight fans to easily see dates and times of upcoming
+                fights (in their local timezone) eliminating the need to search
+                for events on the internet.
+              </Typography>
+            </Grid>
+            <Grid item sm={12} md={5} style={{ paddingTop: "3em" }}>
+              <SvgCharts />
+            </Grid>
+          </Grid>
+          <Grid container direction={"row"} justify={"space-between"}>
+            <Grid item sm={12} md={5} style={{ paddingTop: "3em" }}>
+              <SvgCharts />
+            </Grid>
+            <Grid item sm={12} md={6}>
+              <Typography
+                variant={"h4"}
+                style={{ paddingTop: "2em", fontWeight: "bolder" }}
+              >
+                Event Analysis
+              </Typography>
+              <Typography variant={"subtitle1"}>
+                We allow fight fans to easily see dates and times of upcoming
+                fights (in their local timezone) eliminating the need to search
+                for events on the internet.
+              </Typography>
+            </Grid>
+          </Grid>
         </Grid>
         <Grid item id={"stats"}>
           <Typography

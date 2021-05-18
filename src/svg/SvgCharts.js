@@ -6,7 +6,7 @@ const SvgCharts = () => (
   <svg
     data-name="Layer 1"
     xmlns="http://www.w3.org/2000/svg"
-    viewBox="-500 0 2113.58 784.41"
+    viewBox="-100 0 1700 784.41"
   >
     <defs>
       <linearGradient
