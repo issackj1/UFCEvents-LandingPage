@@ -159,7 +159,7 @@ const App = () => {
             }
             target={"_blank"}
             rel={"noopener noreferrer nofollow"}
-            style={{ margin: "2em 0 1em 0", padding: 10 }}
+            style={{ padding: 15 }}
           >
             Get UFC Calendar Now
           </Button>
