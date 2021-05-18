@@ -10,8 +10,8 @@ const App = () => {
     <Layout>
       <Grid container direction={"column"} alignItems={"center"} spacing={6}>
         <Grid item>
-          <Grid container direction={"row"}>
-            <Grid item sm={12} md={5}>
+          <Grid container direction={"row"} justify={"space-between"}>
+            <Grid item sm={12} md={6}>
               <Typography
                 variant={"h2"}
                 style={{ paddingTop: "4em", fontWeight: "bolder" }}
@@ -19,7 +19,7 @@ const App = () => {
               >
                 UFC Calendar - With live updates
               </Typography>
-              <Typography variant={"subtitle1"} gutterBottom>
+              <Typography variant={"h5"} gutterBottom>
                 Conveniently get live updates of UFC events and view
                 previous/upcoming events with one click.
               </Typography>
@@ -35,7 +35,7 @@ const App = () => {
               >
                 Download Chrome Extension
               </Button>
-              <Typography variant={"subtitle2"} color={"textSecondary"}>
+              <Typography variant={"subtitle1"} color={"textSecondary"}>
                 It's Free!
               </Typography>
             </Grid>
