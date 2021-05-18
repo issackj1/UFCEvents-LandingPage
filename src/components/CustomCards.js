@@ -24,7 +24,7 @@ const useStyles = makeStyles(() => ({
     },
   },
   card: ({ color }) => ({
-    minWidth: 256,
+    minWidth: 300,
     borderRadius: 16,
     boxShadow: "none",
     "&:hover": {
@@ -43,12 +43,12 @@ const useStyles = makeStyles(() => ({
   title: {
     fontFamily: "Keania One",
     fontSize: "2rem",
-    color: "#fff",
+    color: "#000000",
     textTransform: "uppercase",
   },
   subtitle: {
     fontFamily: "Montserrat",
-    color: "#fff",
+    color: "#000000",
     opacity: 0.87,
     marginTop: "2rem",
     fontWeight: 500,
@@ -59,7 +59,7 @@ const useStyles = makeStyles(() => ({
 const CustomCard = ({ classes, title, subtitle }) => {
   return (
     <CardActionArea className={classes.actionArea}>
-      <Card className={classes.card}>
+      <Card className={classes.card} variant={"outlined"}>
         <CardContent className={classes.content}>
           <Typography className={classes.title} variant={"h2"}>
             {title}
@@ -73,9 +73,9 @@ const CustomCard = ({ classes, title, subtitle }) => {
 
 export const SolidGameCardDemo = React.memo(function SolidGameCard() {
   const gridStyles = useGridStyles();
-  const styles = useStyles({ color: "#ee2020" });
-  const styles2 = useStyles({ color: "#ee2020" });
-  const styles3 = useStyles({ color: "#ee2020" });
+  const styles = useStyles({ color: "#ffffff" });
+  const styles2 = useStyles({ color: "#ffffff" });
+  const styles3 = useStyles({ color: "#ffffff" });
   return (
     <>
       <Grid classes={gridStyles} container spacing={4} wrap={"nowrap"}>
