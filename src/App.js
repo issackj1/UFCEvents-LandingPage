@@ -4,6 +4,7 @@ import SvgCharts from "./svg/SvgCharts";
 import CustomCards from "./components/CustomCards";
 import PromoTile from "./images/one.png";
 import React from "react";
+import { Rating } from "@material-ui/lab";
 
 const App = () => {
   return (
@@ -122,6 +123,46 @@ const App = () => {
           >
             Statistics
           </Typography>
+        </Grid>
+        <Grid item>
+          <Grid
+            container
+            justify={"space-between"}
+            alignItems={"center"}
+            spacing={4}
+          >
+            <Grid item>22+ Daily Users</Grid>
+            <Grid item>
+              <Grid container direction={"column"} alignItems={"center"}>
+                <Grid item>
+                  <Typography component="legend">Ratings</Typography>
+                </Grid>
+                <Grid item>
+                  <Rating
+                    name="half-rating-read"
+                    defaultValue={5}
+                    precision={0.5}
+                    readOnly
+                  />
+                </Grid>
+              </Grid>
+            </Grid>
+            <Grid item>50+ Downloads</Grid>
+          </Grid>
+        </Grid>
+        <Grid item>
+          <Button
+            variant={"contained"}
+            color="primary"
+            href={
+              "https://chrome.google.com/webstore/detail/ufc-calendar-with-live-up/pdagojbjdekpdicaefbiolkpgobiaoch"
+            }
+            target={"_blank"}
+            rel={"noopener noreferrer nofollow"}
+            style={{ margin: "2em 0 1em 0", padding: 10 }}
+          >
+            Get UFC Calendar Now
+          </Button>
         </Grid>
       </Grid>
     </Layout>
