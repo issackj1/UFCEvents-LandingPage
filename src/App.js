@@ -42,7 +42,7 @@ const App = () => {
           </Typography>
         </Grid>
         <img src={PromoTile} alt="logo" height={400} />
-        <Grid item>
+        <Grid item id={"features"}>
           <Typography
             variant={"h4"}
             style={{ paddingTop: "2em", fontWeight: "bolder" }}
@@ -53,7 +53,7 @@ const App = () => {
         <Grid item>
           <CustomCards />
         </Grid>
-        <Grid item>
+        <Grid item id={"services"}>
           <Typography
             variant={"h4"}
             style={{ paddingTop: "2em", fontWeight: "bolder" }}
@@ -69,7 +69,7 @@ const App = () => {
           </Typography>
           <SvgCharts />
         </Grid>
-        <Grid item>
+        <Grid item id={"stats"}>
           <Typography
             variant={"h4"}
             style={{ paddingTop: "2em", fontWeight: "bolder" }}

@@ -49,9 +49,15 @@ const Header = () => {
             </Grid>
           </Grid>
           <Grid item>
-            <Button color="inherit">Features</Button>
-            <Button color="inherit">Services</Button>
-            <Button color="inherit">Stats</Button>
+            <Button color="inherit" href={"#features"}>
+              Features
+            </Button>
+            <Button color="inherit" href={"#services"}>
+              Services
+            </Button>
+            <Button color="inherit" href={"#stats"}>
+              Stats
+            </Button>
           </Grid>
           <Grid item>
             <Button
