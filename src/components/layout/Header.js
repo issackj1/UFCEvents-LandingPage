@@ -11,14 +11,8 @@ import logo from "../../images/icon128.png";
 import Grid from "@material-ui/core/Grid";
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
   menuButton: {
     marginRight: theme.spacing(2),
-  },
-  title: {
-    flexGrow: 1,
   },
 }));
 
@@ -37,14 +31,13 @@ const Header = () => {
                   className={classes.menuButton}
                   color="inherit"
                   aria-label="menu"
+                  href={"/"}
                 >
                   <img src={logo} alt="logo" height={32} width={32} />
                 </IconButton>
               </Grid>
               <Grid item>
-                <Typography variant="h6" className={classes.title}>
-                  UFC Calendar
-                </Typography>
+                <Typography variant="h6">UFC Calendar</Typography>
               </Grid>
             </Grid>
           </Grid>

@@ -2,46 +2,48 @@ import Layout from "./components/layout/Layout";
 import { Button, Grid, Typography } from "@material-ui/core";
 import SvgCharts from "./svg/SvgCharts";
 import CustomCards from "./components/CustomCards";
-import PromoTile from "./images/Promo-tile.png";
+import PromoTile from "./images/one.png";
 import React from "react";
 
 const App = () => {
   return (
     <Layout>
-      <Grid container direction={"column"} alignItems={"center"} spacing={3}>
+      <Grid container direction={"column"} alignItems={"center"} spacing={6}>
         <Grid item>
-          <Typography
-            variant={"h3"}
-            style={{ paddingTop: "2em", fontWeight: "bolder" }}
-          >
-            UFC Calendar - With live updates
-          </Typography>
+          <Grid container direction={"row"} justify={"space-around"}>
+            <Grid item sm={12} md={5}>
+              <Typography
+                variant={"h3"}
+                style={{ paddingTop: "5em", fontWeight: "bolder" }}
+                gutterBottom
+              >
+                UFC Calendar - With live updates
+              </Typography>
+              <Typography variant={"subtitle1"} gutterBottom>
+                Conveniently get live updates of UFC events and view
+                previous/upcoming events with one click.
+              </Typography>
+              <Button
+                variant={"contained"}
+                color="primary"
+                href={
+                  "https://chrome.google.com/webstore/detail/ufc-calendar-with-live-up/pdagojbjdekpdicaefbiolkpgobiaoch"
+                }
+                target={"_blank"}
+                rel={"noopener noreferrer nofollow"}
+                style={{ margin: "2em 0 1em 0", padding: 15 }}
+              >
+                Download Chrome Extension
+              </Button>
+              <Typography variant={"subtitle2"} color={"textSecondary"}>
+                It's Free!
+              </Typography>
+            </Grid>
+            <Grid item sm={12} md={5} style={{ paddingTop: "11em" }}>
+              <img src={PromoTile} alt="logo" height={500} />
+            </Grid>
+          </Grid>
         </Grid>
-        <Grid item>
-          <Typography variant={"subtitle1"} gutterBottom>
-            Conveniently get live updates of UFC events and view
-            previous/upcoming events with one click.
-          </Typography>
-        </Grid>
-        <Grid item>
-          <Button
-            variant={"contained"}
-            color="primary"
-            href={
-              "https://chrome.google.com/webstore/detail/ufc-calendar-with-live-up/pdagojbjdekpdicaefbiolkpgobiaoch"
-            }
-            target={"_blank"}
-            rel={"noopener noreferrer nofollow"}
-          >
-            Download Chrome Extension
-          </Button>
-        </Grid>
-        <Grid item>
-          <Typography variant={"subtitle2"} color={"textSecondary"}>
-            It's Free!
-          </Typography>
-        </Grid>
-        <img src={PromoTile} alt="logo" height={400} />
         <Grid item id={"features"}>
           <Typography
             variant={"h4"}
