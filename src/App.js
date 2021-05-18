@@ -13,8 +13,8 @@ const App = () => {
           <Grid container direction={"row"} justify={"space-around"}>
             <Grid item sm={12} md={5}>
               <Typography
-                variant={"h3"}
-                style={{ paddingTop: "5em", fontWeight: "bolder" }}
+                variant={"h2"}
+                style={{ paddingTop: "4em", fontWeight: "bolder" }}
                 gutterBottom
               >
                 UFC Calendar - With live updates
