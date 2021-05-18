@@ -74,6 +74,8 @@ const App = () => {
               <SvgCharts />
             </Grid>
           </Grid>
+        </Grid>
+        <Grid item>
           <Grid container direction={"row"} justify={"space-between"}>
             <Grid item sm={12} md={5} style={{ paddingTop: "3em" }}>
               <SvgCharts />
@@ -90,6 +92,26 @@ const App = () => {
                 fights (in their local timezone) eliminating the need to search
                 for events on the internet.
               </Typography>
+            </Grid>
+          </Grid>
+        </Grid>
+        <Grid item>
+          <Grid container direction={"row"} justify={"space-between"}>
+            <Grid item sm={12} md={6}>
+              <Typography
+                variant={"h4"}
+                style={{ paddingTop: "2em", fontWeight: "bolder" }}
+              >
+                Disable Spoilers
+              </Typography>
+              <Typography variant={"subtitle1"}>
+                We allow fight fans to easily see dates and times of upcoming
+                fights (in their local timezone) eliminating the need to search
+                for events on the internet.
+              </Typography>
+            </Grid>
+            <Grid item sm={12} md={5} style={{ paddingTop: "3em" }}>
+              <SvgCharts />
             </Grid>
           </Grid>
         </Grid>
