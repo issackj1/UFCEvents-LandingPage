@@ -8,7 +8,7 @@ import React from "react";
 const App = () => {
   return (
     <Layout>
-      <Grid container direction={"column"} alignItems={"center"} spacing={6}>
+      <Grid container direction={"column"} alignItems={"center"} spacing={8}>
         <Grid item>
           <Grid container direction={"row"} justify={"space-between"}>
             <Grid item sm={12} md={6}>
