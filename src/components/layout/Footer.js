@@ -1,6 +1,6 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
-import { Link, List, ListItem, Typography } from "@material-ui/core";
+import { Button, Link, List, ListItem, Typography } from "@material-ui/core";
 
 const Footer = () => (
   <Grid container justify={"space-around"} style={{ paddingTop: 60 }}>
@@ -41,37 +41,37 @@ const Footer = () => (
       <Typography variant={"h6"}>Social Media</Typography>
       <List>
         <ListItem>
-          <Link
-            component="button"
-            variant="body2"
-            onClick={() => {
-              console.info("I'm a button.");
-            }}
+          <Button
+            size={"small"}
+            color="primary"
+            target={"_blank"}
+            href={"https://www.facebook.com/CastleridgeLabs"}
+            rel={"noopener noreferrer nofollow"}
           >
-            Dev.to
-          </Link>
+            Facebook
+          </Button>
         </ListItem>
         <ListItem>
-          <Link
-            component="button"
-            variant="body2"
-            onClick={() => {
-              console.info("I'm a button.");
-            }}
+          <Button
+            size={"small"}
+            color="primary"
+            target={"_blank"}
+            href={"https://twitter.com/CastleridgeL"}
+            rel={"noopener noreferrer nofollow"}
           >
             Twitter
-          </Link>
+          </Button>
         </ListItem>
         <ListItem>
-          <Link
-            component="button"
-            variant="body2"
-            onClick={() => {
-              console.info("I'm a button.");
-            }}
+          <Button
+            size={"small"}
+            color="primary"
+            target={"_blank"}
+            href={"#"}
+            rel={"noopener noreferrer nofollow"}
           >
-            GitHub
-          </Link>
+            Github
+          </Button>
         </ListItem>
       </List>
     </Grid>
