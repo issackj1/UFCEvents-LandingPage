@@ -10,7 +10,7 @@ const App = () => {
     <Layout>
       <Grid container direction={"column"} alignItems={"center"} spacing={6}>
         <Grid item>
-          <Grid container direction={"row"} justify={"space-around"}>
+          <Grid container direction={"row"}>
             <Grid item sm={12} md={5}>
               <Typography
                 variant={"h2"}

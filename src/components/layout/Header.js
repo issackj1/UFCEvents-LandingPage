@@ -2,6 +2,7 @@ import React from "react";
 import {
   AppBar,
   Button,
+  Container,
   IconButton,
   makeStyles,
   Toolbar,
@@ -22,50 +23,52 @@ const Header = () => {
   return (
     <AppBar color={"background"}>
       <Toolbar>
-        <Grid container justify={"space-around"} alignItems={"center"}>
-          <Grid item>
-            <Grid container direction={"row"} alignItems={"center"}>
-              <Grid item>
-                <IconButton
-                  edge="start"
-                  className={classes.menuButton}
-                  color="inherit"
-                  aria-label="menu"
-                  href={"/"}
-                >
-                  <img src={logo} alt="logo" height={32} width={32} />
-                </IconButton>
-              </Grid>
-              <Grid item>
-                <Typography variant="h6">UFC Calendar</Typography>
+        <Container>
+          <Grid container justify={"space-between"} alignItems={"center"}>
+            <Grid item>
+              <Grid container direction={"row"} alignItems={"center"}>
+                <Grid item>
+                  <IconButton
+                    edge="start"
+                    className={classes.menuButton}
+                    color="inherit"
+                    aria-label="menu"
+                    href={"/"}
+                  >
+                    <img src={logo} alt="logo" height={32} width={32} />
+                  </IconButton>
+                </Grid>
+                <Grid item>
+                  <Typography variant="h6">UFC Calendar</Typography>
+                </Grid>
               </Grid>
             </Grid>
+            <Grid item>
+              <Button color="inherit" href={"#features"}>
+                Features
+              </Button>
+              <Button color="inherit" href={"#services"}>
+                Services
+              </Button>
+              <Button color="inherit" href={"#stats"}>
+                Stats
+              </Button>
+            </Grid>
+            <Grid item>
+              <Button
+                variant={"contained"}
+                color="primary"
+                href={
+                  "https://chrome.google.com/webstore/detail/ufc-calendar-with-live-up/pdagojbjdekpdicaefbiolkpgobiaoch"
+                }
+                target={"_blank"}
+                rel={"noopener noreferrer nofollow"}
+              >
+                Download
+              </Button>
+            </Grid>
           </Grid>
-          <Grid item>
-            <Button color="inherit" href={"#features"}>
-              Features
-            </Button>
-            <Button color="inherit" href={"#services"}>
-              Services
-            </Button>
-            <Button color="inherit" href={"#stats"}>
-              Stats
-            </Button>
-          </Grid>
-          <Grid item>
-            <Button
-              variant={"contained"}
-              color="primary"
-              href={
-                "https://chrome.google.com/webstore/detail/ufc-calendar-with-live-up/pdagojbjdekpdicaefbiolkpgobiaoch"
-              }
-              target={"_blank"}
-              rel={"noopener noreferrer nofollow"}
-            >
-              Download
-            </Button>
-          </Grid>
-        </Grid>
+        </Container>
       </Toolbar>
     </AppBar>
   );
