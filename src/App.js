@@ -5,6 +5,8 @@ import CustomCards from "./components/CustomCards";
 import React from "react";
 import { Rating } from "@material-ui/lab";
 import Home from "./components/Home";
+import HeroImage from "./svg/HeroImage";
+import SpoilerImage from "./svg/SpoilerImage";
 
 const App = () => {
   return (
@@ -14,7 +16,7 @@ const App = () => {
         direction={"column"}
         justify={"space-between"}
         alignItems={"stretch"}
-        spacing={8}
+        spacing={10}
       >
         <Grid item>
           <Home />
@@ -62,7 +64,7 @@ const App = () => {
             alignItems={"center"}
           >
             <Grid item sm={12} md={5} style={{ paddingTop: "3em" }}>
-              <SvgCharts viewBox={"-100 0 1700 784.41"} />
+              <HeroImage />
             </Grid>
             <Grid item sm={12} md={6}>
               <Typography
@@ -87,10 +89,7 @@ const App = () => {
             alignItems={"center"}
           >
             <Grid item sm={12} md={6}>
-              <Typography
-                variant={"h4"}
-                style={{ paddingTop: "2em", fontWeight: "bolder" }}
-              >
+              <Typography variant={"h4"} style={{ fontWeight: "bolder" }}>
                 Disable Spoilers
               </Typography>
               <Typography variant={"subtitle1"}>
@@ -98,8 +97,8 @@ const App = () => {
                 seeing the result.
               </Typography>
             </Grid>
-            <Grid item sm={12} md={5} style={{ paddingTop: "3em" }}>
-              <SvgCharts viewBox={"-100 0 1700 784.41"} />
+            <Grid item sm={12} md={5}>
+              <SpoilerImage />
             </Grid>
           </Grid>
         </Grid>
