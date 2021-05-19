@@ -10,7 +10,6 @@ const useStyles = makeStyles(() => ({
     paddingTop: "2em",
     fontWeight: "bolder",
   },
-  picture: { paddingTop: "3em" },
 }));
 
 const Services = () => {
