@@ -3,8 +3,18 @@ import { Grid, Typography } from "@material-ui/core";
 import SvgCharts from "../svg/SvgCharts";
 import HeroImage from "../svg/HeroImage";
 import SpoilerImage from "../svg/SpoilerImage";
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles(() => ({
+  title: {
+    paddingTop: "2em",
+    fontWeight: "bolder",
+  },
+  picture: { paddingTop: "3em" },
+}));
 
 const Services = () => {
+  const classes = useStyles();
   return (
     <>
       <Grid item id={"services"}>
@@ -15,17 +25,14 @@ const Services = () => {
           alignItems={"center"}
         >
           <Grid item sm={12} md={5}>
-            <Typography
-              variant={"h4"}
-              style={{ paddingTop: "2em", fontWeight: "bolder" }}
-            >
+            <Typography variant={"h4"} className={classes.title}>
               Live Updates
             </Typography>
             <Typography variant={"subtitle1"}>
               Real-time updates of events showing our users content changes
             </Typography>
           </Grid>
-          <Grid item sm={12} md={5} style={{ paddingTop: "3em" }}>
+          <Grid item sm={12} md={5}>
             <SvgCharts viewBox={"-100 0 1700 784.41"} />
           </Grid>
         </Grid>
@@ -37,14 +44,11 @@ const Services = () => {
           justify={"space-between"}
           alignItems={"center"}
         >
-          <Grid item sm={12} md={5} style={{ paddingTop: "3em" }}>
+          <Grid item sm={12} md={5}>
             <HeroImage />
           </Grid>
           <Grid item sm={12} md={6}>
-            <Typography
-              variant={"h4"}
-              style={{ paddingTop: "2em", fontWeight: "bolder" }}
-            >
+            <Typography variant={"h4"} className={classes.title}>
               Event Analysis
             </Typography>
             <Typography variant={"subtitle1"}>
@@ -63,7 +67,7 @@ const Services = () => {
           alignItems={"center"}
         >
           <Grid item sm={12} md={6}>
-            <Typography variant={"h4"} style={{ fontWeight: "bolder" }}>
+            <Typography variant={"h4"} className={classes.title}>
               Disable Spoilers
             </Typography>
             <Typography variant={"subtitle1"}>
