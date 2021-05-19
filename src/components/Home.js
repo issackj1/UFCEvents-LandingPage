@@ -3,7 +3,7 @@ import PromoTile from "../images/one.png";
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   title: {
     paddingTop: "4em",
     fontWeight: "bolder",
@@ -33,10 +33,10 @@ const Home = () => {
           </Typography>
           <Button
             variant={"contained"}
-            color="primary"
             href={
               "https://chrome.google.com/webstore/detail/ufc-calendar-with-live-up/pdagojbjdekpdicaefbiolkpgobiaoch"
             }
+            color={"primary"}
             target={"_blank"}
             rel={"noopener noreferrer nofollow"}
             className={classes.button}
