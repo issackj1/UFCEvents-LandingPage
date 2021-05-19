@@ -21,7 +21,7 @@ const Header = () => {
   const classes = useStyles();
 
   return (
-    <AppBar color={"background"}>
+    <AppBar color={"secondary"}>
       <Toolbar>
         <Container>
           <Grid container justify={"space-between"} alignItems={"center"}>
