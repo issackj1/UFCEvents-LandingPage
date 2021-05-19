@@ -13,7 +13,7 @@ import Grid from "@material-ui/core/Grid";
 
 const useStyles = makeStyles((theme) => ({
   menuButton: {
-    marginRight: theme.spacing(2),
+    marginRight: theme.spacing(1),
   },
 }));
 
@@ -24,9 +24,19 @@ const Header = () => {
     <AppBar color={"secondary"}>
       <Toolbar>
         <Container>
-          <Grid container justify={"space-between"} alignItems={"center"}>
+          <Grid
+            container
+            justify={"space-between"}
+            alignItems={"center"}
+            wrap={"nowrap"}
+          >
             <Grid item>
-              <Grid container direction={"row"} alignItems={"center"}>
+              <Grid
+                container
+                direction={"row"}
+                alignItems={"center"}
+                wrap={"nowrap"}
+              >
                 <Grid item>
                   <IconButton
                     edge="start"
@@ -44,15 +54,17 @@ const Header = () => {
               </Grid>
             </Grid>
             <Grid item>
-              <Button color="inherit" href={"#features"}>
-                Features
-              </Button>
-              <Button color="inherit" href={"#services"}>
-                Services
-              </Button>
-              <Button color="inherit" href={"#stats"}>
-                Stats
-              </Button>
+              <Grid container wrap={"nowrap"}>
+                <Button color="inherit" href={"#features"}>
+                  Features
+                </Button>
+                <Button color="inherit" href={"#services"}>
+                  Services
+                </Button>
+                <Button color="inherit" href={"#stats"}>
+                  Stats
+                </Button>
+              </Grid>
             </Grid>
             <Grid item>
               <Button

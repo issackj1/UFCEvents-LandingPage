@@ -3,15 +3,15 @@ import Grid from "@material-ui/core/Grid";
 import { Button, Link, List, ListItem, Typography } from "@material-ui/core";
 
 const Footer = () => (
-  <Grid container justify={"space-around"} style={{ paddingTop: 60 }}>
-    <Grid item md={3}>
+  <Grid container justify={"space-around"} style={{ marginTop: "5em" }}>
+    <Grid item sm={3} md={3}>
       <Typography variant={"h6"}>About Us</Typography>
       <Typography variant={"body1"}>
         The first UFC browser extension to display all previous/upcoming events
         with live fight results.
       </Typography>
     </Grid>
-    <Grid item md={3}>
+    <Grid item sm={3} md={3}>
       <Typography variant={"h6"}>Important Links</Typography>
       <List>
         <ListItem style={{ padding: 0 }}>
@@ -46,7 +46,7 @@ const Footer = () => (
         </ListItem>
       </List>
     </Grid>
-    <Grid item md={3}>
+    <Grid item sm={3} md={3}>
       <Typography variant={"h6"}>Social Media</Typography>
       <List>
         <ListItem style={{ padding: 0 }}>
