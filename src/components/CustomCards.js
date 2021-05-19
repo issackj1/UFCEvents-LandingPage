@@ -77,7 +77,7 @@ export const SolidGameCardDemo = React.memo(function SolidGameCard() {
   const styles3 = useStyles({ color: "#ffffff" });
   return (
     <>
-      <Grid classes={gridStyles} container spacing={4} wrap={"nowrap"}>
+      <Grid classes={gridStyles} container spacing={4}>
         <Grid item>
           <CustomCard
             classes={styles}
