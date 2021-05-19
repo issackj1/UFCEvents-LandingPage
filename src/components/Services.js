@@ -4,7 +4,7 @@ import SvgCharts from "../svg/SvgCharts";
 import HeroImage from "../svg/HeroImage";
 import SpoilerImage from "../svg/SpoilerImage";
 
-const Services = (props) => {
+const Services = () => {
   return (
     <>
       <Grid item id={"services"}>
