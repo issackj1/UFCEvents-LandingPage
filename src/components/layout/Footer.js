@@ -13,62 +13,72 @@ const Footer = () => (
     <Grid item md={3}>
       <Typography variant={"h6"}>Important Links</Typography>
       <List>
-        <ListItem>
-          <Link
-            component="button"
-            variant="body2"
-            onClick={() => {
-              console.info("I'm a button.");
-            }}
+        <ListItem style={{ padding: 0 }}>
+          <Button
+            size={"small"}
+            component={Link}
+            color="primary"
+            target={"_blank"}
+            href={"#"}
+            rel={"noopener noreferrer nofollow"}
+            style={{ backgroundColor: "transparent" }}
           >
             Terms &amp; Conditions
-          </Link>
+          </Button>
         </ListItem>
-        <ListItem>
-          <Link
-            component="button"
-            variant="body2"
-            onClick={() => {
-              console.info("I'm a button.");
-            }}
+        <ListItem style={{ padding: 0 }}>
+          <Button
+            size={"small"}
+            component={Link}
+            color="primary"
+            target={"_blank"}
+            href={"#"}
+            rel={"noopener noreferrer nofollow"}
+            style={{ backgroundColor: "transparent" }}
           >
             Privacy Policy
-          </Link>
+          </Button>
         </ListItem>
       </List>
     </Grid>
     <Grid item md={3}>
       <Typography variant={"h6"}>Social Media</Typography>
       <List>
-        <ListItem>
+        <ListItem style={{ padding: 0 }}>
           <Button
             size={"small"}
+            component={Link}
             color="primary"
             target={"_blank"}
             href={"https://www.facebook.com/CastleridgeLabs"}
             rel={"noopener noreferrer nofollow"}
+            style={{ backgroundColor: "transparent" }}
           >
             Facebook
           </Button>
         </ListItem>
-        <ListItem>
+        <ListItem style={{ padding: 0 }}>
           <Button
             size={"small"}
+            component={Link}
             color="primary"
             target={"_blank"}
             href={"https://twitter.com/CastleridgeL"}
             rel={"noopener noreferrer nofollow"}
+            style={{ backgroundColor: "transparent" }}
           >
             Twitter
           </Button>
         </ListItem>
-        <ListItem>
+        <ListItem style={{ padding: 0 }}>
           <Button
             size={"small"}
+            component={Link}
             color="primary"
             target={"_blank"}
             href={"#"}
             rel={"noopener noreferrer nofollow"}
+            style={{ backgroundColor: "transparent" }}
           >
             Github
           </Button>
