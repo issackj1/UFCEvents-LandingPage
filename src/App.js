@@ -16,9 +16,7 @@ const App = () => {
         alignItems={"stretch"}
         spacing={10}
       >
-        <Grid item>
-          <Home />
-        </Grid>
+        <Home />
         <Features />
         <Services />
         <Statistics />
