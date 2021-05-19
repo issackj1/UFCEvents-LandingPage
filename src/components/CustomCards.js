@@ -41,17 +41,16 @@ const useStyles = makeStyles(() => ({
     };
   },
   title: {
-    fontFamily: "Keania One",
+    fontWeight: "350",
     fontSize: "2rem",
     color: "#000000",
     textTransform: "uppercase",
   },
   subtitle: {
-    fontFamily: "Montserrat",
     color: "#000000",
     opacity: 0.87,
     marginTop: "2rem",
-    fontWeight: 500,
+    fontWeight: 400,
     fontSize: 14,
   },
 }));

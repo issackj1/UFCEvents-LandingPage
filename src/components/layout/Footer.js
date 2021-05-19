@@ -7,7 +7,8 @@ const Footer = () => (
     <Grid item md={3}>
       <Typography variant={"h6"}>About Us</Typography>
       <Typography variant={"body1"}>
-        Ridiculus mus mauris vitae ultricies leo integer malesuada nunc.
+        The first UFC browser extension to display all previous/upcoming events
+        with live fight results.
       </Typography>
     </Grid>
     <Grid item md={3}>
@@ -19,7 +20,9 @@ const Footer = () => (
             component={Link}
             color="primary"
             target={"_blank"}
-            href={"#"}
+            href={
+              "https://chrome.google.com/webstore/detail/ufc-calendar-with-live-up/pdagojbjdekpdicaefbiolkpgobiaoch"
+            }
             rel={"noopener noreferrer nofollow"}
             style={{ backgroundColor: "transparent" }}
           >
@@ -32,7 +35,9 @@ const Footer = () => (
             component={Link}
             color="primary"
             target={"_blank"}
-            href={"#"}
+            href={
+              "https://chrome.google.com/webstore/detail/ufc-calendar-with-live-up/pdagojbjdekpdicaefbiolkpgobiaoch"
+            }
             rel={"noopener noreferrer nofollow"}
             style={{ backgroundColor: "transparent" }}
           >
