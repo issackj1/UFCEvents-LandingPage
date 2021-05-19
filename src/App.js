@@ -132,7 +132,7 @@ const App = () => {
             spacing={4}
           >
             <Grid item>
-              <Typography variant={"h5"}>22+ Users</Typography>
+              <Typography variant={"h5"}>28+ Users</Typography>
             </Grid>
             <Grid item>
               <Grid container direction={"column"} alignItems={"center"}>
@@ -148,9 +148,6 @@ const App = () => {
                   />
                 </Grid>
               </Grid>
-            </Grid>
-            <Grid item>
-              <Typography variant={"h5"}>50+ Installs</Typography>
             </Grid>
           </Grid>
         </Grid>
