@@ -82,22 +82,22 @@ export const SolidGameCardDemo = React.memo(function SolidGameCard() {
         <Grid item>
           <CustomCard
             classes={styles}
-            title={"Service One"}
-            subtitle={"lorem"}
+            title={"Simple"}
+            subtitle={"Intuitive navigation"}
           />
         </Grid>
         <Grid item>
           <CustomCard
             classes={styles2}
-            title={"Service Two"}
-            subtitle={"lorem"}
+            title={"Convenient"}
+            subtitle={"One click"}
           />
         </Grid>
         <Grid item>
           <CustomCard
             classes={styles3}
-            title={"Service Three"}
-            subtitle={"lorem"}
+            title={"Fast"}
+            subtitle={"Results NOW"}
           />
         </Grid>
       </Grid>

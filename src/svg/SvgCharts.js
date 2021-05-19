@@ -2,12 +2,8 @@ import React from "react";
 
 const mainColor = "#ee2020";
 
-const SvgCharts = () => (
-  <svg
-    data-name="Layer 1"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="-100 0 1700 784.41"
-  >
+const SvgCharts = ({ viewBox }) => (
+  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox={viewBox}>
     <defs>
       <linearGradient
         id="a"
