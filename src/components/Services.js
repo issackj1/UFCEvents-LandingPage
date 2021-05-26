@@ -25,7 +25,7 @@ const Services = () => {
         >
           <Grid item sm={12} md={5}>
             <Typography variant={"h4"} className={classes.title}>
-              🚫 Spoiler Alerts 🚫
+              🚫 SPOILER ALERTS 🚫
             </Typography>
             <Typography variant={"subtitle1"}>
               Enable spoiler alerts to hide the result of fights until you
@@ -51,7 +51,7 @@ const Services = () => {
           </Grid>
           <Grid item sm={12} md={6}>
             <Typography variant={"h4"} className={classes.title}>
-              🌎 Fight Times In Your Timezone 🌍
+              🌎 FIGHT TIMES IN YOUR TIMEZONE 🌍
             </Typography>
             <Typography variant={"subtitle1"}>
               All fight times are automatically converted to your local time
