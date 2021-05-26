@@ -25,7 +25,7 @@ const Home = () => {
       <Grid container direction={"row"} justify={"space-between"}>
         <Grid item sm={12} md={6}>
           <Typography variant={"h2"} className={classes.title} gutterBottom>
-            UFC Calendar - With live updates
+            UFC Calendar
           </Typography>
           <Typography variant={"h5"} gutterBottom>
             Conveniently get live updates of UFC events and view

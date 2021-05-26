@@ -25,10 +25,57 @@ const Services = () => {
         >
           <Grid item sm={12} md={5}>
             <Typography variant={"h4"} className={classes.title}>
-              Live Updates
+              🚫 Spoiler Alerts 🚫
             </Typography>
             <Typography variant={"subtitle1"}>
-              Real-time updates of events showing our users content changes
+              Enable spoiler alerts to hide the result of fights until you
+              decide to uncover it. We also inform you which fights were awarded
+              bonuses such as the Fight of the Night and Performance of the
+              Night without spoiling the result.{" "}
+            </Typography>
+          </Grid>
+          <Grid item sm={12} md={5}>
+            <SpoilerImage />
+          </Grid>
+        </Grid>
+      </Grid>
+      <Grid item>
+        <Grid
+          container
+          direction={"row"}
+          justify={"space-between"}
+          alignItems={"center"}
+        >
+          <Grid item sm={12} md={5}>
+            <HeroImage />
+          </Grid>
+          <Grid item sm={12} md={6}>
+            <Typography variant={"h4"} className={classes.title}>
+              🌎 Fight Times In Your Timezone 🌍
+            </Typography>
+            <Typography variant={"subtitle1"}>
+              All fight times are automatically converted to your local time
+              zone so you will know exactly when an event starts for you.
+            </Typography>
+          </Grid>
+        </Grid>
+      </Grid>
+      <Grid item>
+        <Grid
+          container
+          direction={"row"}
+          justify={"space-between"}
+          alignItems={"center"}
+        >
+          <Grid item sm={12} md={6}>
+            <Typography variant={"h4"} className={classes.title}>
+              💥 LIVE FIGHT UPDATES 💥
+            </Typography>
+            <Typography variant={"subtitle1"}>
+              The result of each fight is uploaded seconds after it is
+              announced. If you are a fan that only tunes in during the main
+              event, this is the most convenient way to view which fights have
+              passed and decide when to tune in.
             </Typography>
           </Grid>
           <Grid item sm={12} md={5}>
@@ -48,34 +95,13 @@ const Services = () => {
           </Grid>
           <Grid item sm={12} md={6}>
             <Typography variant={"h4"} className={classes.title}>
-              Event Analysis
+              📊 FIGHT STATISTICS 📊
             </Typography>
             <Typography variant={"subtitle1"}>
-              We allow fight fans to easily see dates and times of upcoming
-              fights (in their local timezone) eliminating the need to search
-              for events on the internet.
+              From the Tale of the Tape to fight statistics such as knockdowns,
+              significant strikes, and takedowns, our chrome extension will
+              satisfy all of your data needs.
             </Typography>
-          </Grid>
-        </Grid>
-      </Grid>
-      <Grid item>
-        <Grid
-          container
-          direction={"row"}
-          justify={"space-between"}
-          alignItems={"center"}
-        >
-          <Grid item sm={12} md={6}>
-            <Typography variant={"h4"} className={classes.title}>
-              Disable Spoilers
-            </Typography>
-            <Typography variant={"subtitle1"}>
-              View fight of the night and performance of the night without
-              seeing the result.
-            </Typography>
-          </Grid>
-          <Grid item sm={12} md={5}>
-            <SpoilerImage />
           </Grid>
         </Grid>
       </Grid>
