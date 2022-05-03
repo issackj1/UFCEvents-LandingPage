@@ -22,7 +22,7 @@ const Statistics = () => {
           spacing={4}
         >
           <Grid item>
-            <Typography variant={"h5"}>150+ Users</Typography>
+            <Typography variant={"h5"}>190+ Users</Typography>
           </Grid>
           <Grid item>
             <Grid container direction={"column"} alignItems={"center"}>
